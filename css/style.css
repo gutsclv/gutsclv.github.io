@@ -1,0 +1,238 @@
+body {
+background: linear-gradient(0deg, rgb(0 0 0) 0%, rgb(27 87 99) 84%);
+  color: white!important;
+  /* background-color:#f0f0f0; */
+
+  min-height: 100vh;
+  font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New!important;
+overflow-x: hidden;
+}
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #2dbfe5!important;
+    }
+
+.bk2{
+
+    box-shadow: 6px 4px 22px #389621;
+    border-radius: 16px;
+    padding: 26px;
+    background: #0c6071;
+    border: 2px solid #14e67e;
+}
+.pt1{
+      padding-top: 3%;
+}
+.table {
+  color: white!important;
+}
+li.nav-item {
+    padding-right: 12px;
+}
+.main {
+  max-width:880px;
+  margin: 0 auto;
+}
+
+.bglight {
+    background-color:  #0b3641!important;
+}
+
+.navbar i{
+  font-size: 2rem;
+  color: white;
+  padding-left: 5px;
+      padding-top: 6px;
+}
+
+.nav-tabs {
+    border-bottom: 0px solid #dee2e6!important;
+}
+
+.tab-content{
+  background: rgb(12 63 75 / 0.3);
+  padding: 3%;
+      box-shadow: 6px 4px 22px -5px #389621;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff!important;
+    background-color: #184d57!important;
+    border-color: none!important;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  border: none!important;
+}
+
+
+a{
+  color: #13e870!important;
+}
+
+#loading {
+    -webkit-animation: rotation 5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    background: #10e779;
+    border-color: rgba(0,0,0,.1);
+}
+.main-clv{
+
+}
+.circles{
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0%;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 100%;
+    }
+
+}
+
+pre{
+  color: white!important;
+}
+  .logoimg{
+    width: 388px;
+  }
+@media only screen and (max-width: 990px) {
+  .logoimg{
+    max-width: 88px;
+  }
+  .circles li:nth-child(10) {
+    left: 23%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+li.nav-item {
+    padding-right: 6px;
+    font-size: 10px;
+}
+}
